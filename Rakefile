@@ -4,8 +4,9 @@ require 'stringio'
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
+task :default => [:spec, :integration]
 
+desc 'Run specs against RSpec'
 task :rspec do
   require 'rspec/core'
   err = StringIO.new
@@ -13,6 +14,11 @@ task :rspec do
   RSpec::Core::Runner.run([integration_file('rspec')], err, out)
 
   assert_contains!(out.string, '6 examples, 2 failures')
+end
+
+desc 'Run all integration specs'
+task :integration => [:rspec] do
+  puts "Integrations specs passed!"
 end
 
 INTEGRATION_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'integration'))
