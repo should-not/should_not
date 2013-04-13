@@ -1,6 +1,7 @@
 # should_not
 
 You `should_not` start your specs with the string `"should"`.
+Use this gem to enforce that rule.
 
 ## Installation
 
