@@ -8,17 +8,25 @@ Gem::Specification.new do |spec|
   spec.version       = ShouldNot::VERSION
   spec.authors       = ["Mark Rushakoff"]
   spec.email         = ["mark.rushakoff@gmail.com"]
-  spec.description   = %q{You should_not start your specs with the string "should".}
+  spec.description   = <<-DESC
+  You should_not start your specs with the string "should".
+  If every spec starts with "should", then it's redundant everywhere.
+
+  Instead, write in an active tone:
+  `it "should ignore nil arguments"` - BAD
+  `it "ignores nil elements"` - GOOD
+  DESC
   spec.summary       = %q{Fail specs that start with should.}
   spec.homepage      = "https://github.com/mark-rushakoff/should_not"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features|integration)/})
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "minitest"
   spec.add_development_dependency "rspec"
 end
