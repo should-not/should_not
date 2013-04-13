@@ -1,5 +1,8 @@
 # should_not
 
+[![Build Status](https://travis-ci.org/mark-rushakoff/should_not.png?branch=master)](https://travis-ci.org/mark-rushakoff/should_not)
+[![Code Climate](https://codeclimate.com/github/mark-rushakoff/should_not.png)](https://codeclimate.com/github/mark-rushakoff/should_not)
+
 You `should_not` start your specs with the string `"should"`.
 Use this gem to enforce that rule.
 
