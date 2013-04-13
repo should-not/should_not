@@ -26,4 +26,14 @@ describe RSpec do
       1.should == 1
     end
   end
+
+  describe 'another nested context', :should => true do
+    it 'can pass yet another normal test' do
+      1.should == 1
+    end
+
+    it 'should not care if a spec starts with should' do
+      1.should == 1
+    end
+  end
 end
