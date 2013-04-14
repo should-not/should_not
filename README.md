@@ -42,11 +42,11 @@ and then specs (`describe`/`it` syntax only) will fail if the `it` description s
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please port this library to your language of choice!
+Once it's ready, I'll be happy to add your port as a repo under the [`should-not` organization](https://github.com/should-not).
+
+If you'd like to contribute to the Ruby version `should_not`, we could use support for more testing frameworks.
+Just make sure that you have integration test coverage before you open a pull request.
 
 ## License
 
