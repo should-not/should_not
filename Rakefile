@@ -14,11 +14,23 @@ task :rspec do
   RSpec::Core::Runner.run([integration_file('rspec')], err, out)
 
   assert_contains!(out.string, '8 examples, 2 failures')
+  puts "RSpec integration spec passed"
+end
+
+desc 'Run specs against MiniTest'
+task :minitest do
+  require 'rbconfig'
+  ruby = File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['ruby_install_name'])
+  output = `#{ruby} #{integration_file('minitest')}`
+
+  assert_contains!(output, '6 tests')
+  assert_contains!(output, '2 failures')
+  puts "MiniTest integration spec passed"
 end
 
 desc 'Run all integration specs'
-task :integration => [:rspec] do
-  puts "Integrations specs passed!"
+task :integration => [:rspec, :minitest] do
+  puts "All integration specs passed!"
 end
 
 INTEGRATION_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'integration'))
