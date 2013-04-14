@@ -48,6 +48,12 @@ Once it's ready, I'll be happy to add your port as a repo under the [`should-not
 If you'd like to contribute to the Ruby version `should_not`, we could use support for more testing frameworks.
 Just make sure that you have integration test coverage before you open a pull request.
 
+## Related Projects
+
+* The [should_clean gem](https://github.com/siyelo/should_clean) from @siyelo is a utility that changes `'it "should do something"'` to `'it "does something"'`
+* [BetterSpecs](http://betterspecs.org/#should) currently recommends not beginning your specs with "should."
+There is good discussion about this topic at their [GitHub issue](https://github.com/andreareginato/betterspecs/issues/15) about not starting with "should."
+
 ## License
 
 Available under the terms of the MIT license.
