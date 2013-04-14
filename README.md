@@ -47,3 +47,8 @@ and then specs (`describe`/`it` syntax only) will fail if the `it` description s
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+Available under the terms of the MIT license.
+See [LICENSE.MIT](LICENSE.MIT) for more details.
