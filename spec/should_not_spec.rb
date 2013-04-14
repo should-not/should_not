@@ -36,5 +36,18 @@ describe ShouldNot do
         'shoulda is a helpful library for testing Rails'.should_not match(subject)
       end
     end
+    describe 'MINITEST_DESCRIPTION_PREFIX' do
+      subject { ShouldNot::MINITEST_DESCRIPTION_PREFIX }
+
+      it 'matches the irrelevant part of the test method name' do
+        stripped = 'test_0000_foo bar'.gsub(subject, '')
+        stripped.should == 'foo bar'
+      end
+
+      it 'handles when there are more than 10k tests' do
+        stripped = 'test_12345_foo bar'.gsub(subject, '')
+        stripped.should == 'foo bar'
+      end
+    end
   end
 end
