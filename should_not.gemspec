@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   `it "ignores nil elements"` - GOOD
   DESC
   spec.summary       = %q{Fail specs that start with should.}
-  spec.homepage      = "https://github.com/mark-rushakoff/should_not"
+  spec.homepage      = "https://github.com/should-not/should_not"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
