@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   If every spec starts with "should", then it's redundant everywhere.
 
   Instead, write in an active tone:
-  `it "should ignore nil arguments"` - BAD
+  `it "should ignore nil elements"` - BAD
   `it "ignores nil elements"` - GOOD
   DESC
   spec.summary       = %q{Fail specs that start with should.}
