@@ -13,7 +13,7 @@ task :rspec do
   out = StringIO.new
   RSpec::Core::Runner.run([integration_file('rspec')], err, out)
 
-  assert_contains!(out.string, '8 examples, 2 failures')
+  assert_contains!(out.string, '5 examples, 2 failures')
   puts "RSpec integration spec passed"
 end
 
