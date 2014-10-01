@@ -23,7 +23,7 @@ task :minitest do
   ruby = File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['ruby_install_name'])
   output = `#{ruby} #{integration_file('minitest')}`
 
-  assert_contains!(output, '6 tests')
+  assert_contains!(output, '6 runs')
   assert_contains!(output, '2 failures')
   puts "MiniTest integration spec passed"
 end
