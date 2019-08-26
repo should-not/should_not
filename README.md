@@ -1,8 +1,8 @@
 # should_not
 
-[![Build Status](https://travis-ci.org/should-not/should_not.png?branch=master)](https://travis-ci.org/should-not/should_not)
-[![Code Climate](https://codeclimate.com/github/should-not/should_not.png)](https://codeclimate.com/github/should-not/should_not)
-[![Gem Version](https://badge.fury.io/rb/should_not.png)](http://badge.fury.io/rb/should_not)
+[![Build Status](https://travis-ci.org/should-not/should_not.svg?branch=master)](https://travis-ci.org/should-not/should_not)
+[![Code Climate](https://codeclimate.com/github/should-not/should_not.svg)](https://codeclimate.com/github/should-not/should_not)
+[![Gem Version](https://badge.fury.io/rb/should_not.svg)](http://badge.fury.io/rb/should_not)
 
 You `should_not` start your specs with the string `"should"`:
 if every spec begins with `"should"`, then `"should"` is redundant everywhere and becomes noise.
